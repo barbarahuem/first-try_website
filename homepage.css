@@ -10,6 +10,14 @@ body {
 
 }
 
+.home {
+  background-color: brown;
+  position: absolute;
+  padding: 0.5em;
+  text-align: right;
+  display: block;
+}
+
 .header-img {
   background-image: url(./img/IMG_0853-mountain.png);
   height: 80vh;
