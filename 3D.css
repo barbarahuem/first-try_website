@@ -11,7 +11,7 @@
   }
   
   .header-img {
-    background-image: url(./img/IMG_0853-mountain2.png);
+    background-image: url(./img/IMG_0853-one.png);
     height:50vh;
     width: 100%;
     display: block;
@@ -19,21 +19,20 @@
     background-size: cover;
     background-position: top;
     opacity: 0.5;
-
     padding: 11em;
   }
 
   .header-text {
-    background-color:rgba(189, 167, 153, 0.8);
+    background-color:rgba(189, 167, 153, 0.9);
     color: #FFFFFF;
     margin: auto;
-    padding: 0.4em;
+    padding: 0.45em;
     width: 310px;
     height: 100px;
     text-align: center;
 
     font-weight: 300;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 59px;
     
   }
