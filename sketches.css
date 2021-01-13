@@ -11,29 +11,78 @@
   }
   
   .header-img {
-    background-image: url(./img/IMG_0853-one.png);
-    height:50vh;
+    background-image: url(./img/IMG_0853-mountain2.png);
     width: 100%;
     display: block;
     position: relative;
     background-size: cover;
     background-position: top;
-    opacity: 0.5;
 
+    opacity: 0.8;
     padding: 11em;
   }
 
-  .header-text {
-    background-color: rgba(191, 209, 214, 0.9);
-    color: #FFFFFF;
-    margin: auto;
-    padding: 0.4em;
-    width: 310px;
-    height: 100px;
-    text-align: center;
+    /* buttons Portfolio */
 
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    }
+  
+  .boxes > * {
+    padding: 0.9em;
+    height: 90px;
+    text-align: center;
     font-weight: 300;
-    font-size: 50px;
-    line-height: 59px;
-    
+    font-size: 30px;
+    color: #F5F1F1;
+    background-color: rgb(192, 192, 192);
+    border-radius: 3px;
   }
+
+  .photo:hover {
+    background-color: rgba(57, 79, 86, 1);
+    border-radius: 50px;
+  }
+  
+  .sketch{
+    background: rgba(191, 209, 214);
+    border-radius: 50px;
+  }
+
+  h1 {
+    color:rgba(28, 45, 53, 1);
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .model:hover {
+    background: rgba(189, 167, 153);
+  }
+  
+  .CSS:hover {
+    background: rgba(65, 60, 54);
+  }
+
+
+
+
+
+  
+/* hover */
+
+a:link {
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  border-radius:50px;
+  
+  transition:.4s;
+  transition-property: left;
+}
+
