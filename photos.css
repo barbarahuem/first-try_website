@@ -7,81 +7,205 @@
   body {
     font-family: 'Roboto', sans-serif;
     margin:40px;
-  
+    margin-top: 10px;
   }
-  
+
   .header-img {
-    background-image: url(./img/IMG_0853-one.png);
-    height:50vh;
+    background-image: url(./img/IMG_0853-mountain2.png);
     width: 100%;
     display: block;
     position: relative;
     background-size: cover;
     background-position: top;
-    opacity: 0.5;
 
+    opacity: 0.8;
     padding: 11em;
   }
 
-  .header-text {
-    background-color:rgba(135, 150, 155, 0.9);
-    color: #FFFFFF;
-    margin: auto;
-    padding: 0.4em;
-    width: 310px;
-    height: 100px;
-    text-align: center;
+    /* buttons Portfolio */
 
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 59px;
-    
-  }
-  .photo-box {
+  .boxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, 250px);
     grid-gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    }
+  
+  .boxes > * {
+    padding: 0.9em;
+    height: 90px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+    color: #F5F1F1;
+    background-color: rgb(192, 192, 192);
+    border-radius: 3px;
+  }
+
+  .photo {
+    background-color: rgba(57, 79, 86, 1);
+    border-radius: 50px;
+  }
+  
+  .sketch:hover{
+    background: rgba(191, 209, 214);
+  }
+  
+  .model:hover {
+    background: rgba(189, 167, 153);
+  }
+  
+  .CSS:hover {
+    background: rgba(65, 60, 54);
+  }
+  
+  .text {
     margin: 40px;
     position: relative;
+    color:rgba(28, 45, 53, 1);
+  }
+
+
+  h1 {
+    color:rgba(28, 45, 53, 1);
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+  }
   
+  .photo-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+    
+    grid-auto-rows: 10vw;
+    grid-auto-flow: dense;
+    gap: 1rem;
+    margin: 40px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     }
 
-  .photo-box > * {
-    padding: 2em;
-    background-color:rgba(178, 34, 34, 0.178) ;
-  }
 
-  .text {
-    grid-column: 1 / 5;
-  }
-
-  .firstimg {
+  .AB {
     background-image:  url(./img/IMG_0942.jpg);
-    background-position: bottom;
     background-size: cover;
-
-    color: #FFFFFF;
-      
-
+    background-position: center;
+    grid-row: span 2;
+    grid-column: span 2;
   }
 
-  .secimg {
-    grid-row: 2 / 4;
-    grid-column: 4;
-
+  .bluefl {
     background-image:  url(./img/IMG_0729.jpg);
-    background-position: center;
     background-size: cover;
-     
-    color: #FFFFFF;
+    background-position: center;
+    grid-row: span 2;
+    grid-column: span 2;
   }
 
-  .thirdimg {
-
+  .Bi {
     background-image:  url(./img/IMG_0876.jpg);
-    background-position: center;
     background-size: cover;
-    
-    color: #FFFFFF;
+    background-position: center;
+    grid-row: span 2;
+    grid-column: span 2;
 }
+
+.water {
+  background-image:  url(./img/IMG_0803.JPG);
+  background-size: cover;
+  background-position: center;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.yellfl{
+  background-image:  url(./img/IMG_0723.JPG);
+  background-size: cover;
+  background-position: center;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.salb {
+  background-image:  url(./img/IMG_0741.JPG);
+  background-size: cover;
+  background-position: center;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.Anbi {
+  background-image:  url(./img/IMG_0331.JPG);
+  background-size: cover;
+  background-position: center;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.watersec {
+  background-image:  url(./img/IMG_0776.JPG);
+  background-size: cover;
+  background-position: center;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.leafone {
+  background-image:  url(./img/IMG_0769.JPG);
+  background-size: cover;
+  background-position: center;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+
+.buttom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(76, 81, 92, 1);
+  height: 70px;
+}
+
+.buttom > * {
+  padding: 0px;
+  font-weight: 300;
+  font-size: 15px;
+  color: #F5F1F1;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.hb {
+text-align: left;
+padding-left: 15px;
+}
+
+.molln {
+grid-column: 2 / 4;
+text-align: center;
+}
+  
+.mtd {
+text-align: right;
+padding-right: 15px;
+}
+
+/* hover */
+
+a:link {
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  border-radius:50px;
+  
+  transition:.4s;
+  transition-property: left;
+}
+
