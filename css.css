@@ -1,39 +1,160 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin:40px;
+  margin-top: 10px;
+}
+
+.header-img {
+  background-image: url(./img/IMG_0853-mountain2.png);
+  width: 100%;
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-position: top;
+
+  opacity: 0.8;
+  padding: 11em;
+}
+
+  /* buttons Portfolio */
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 30px;
   }
+
+.boxes > * {
+  padding: 0.9em;
+  height: 90px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+  color: #F5F1F1;
+  background-color: rgb(192, 192, 192);
+  border-radius: 3px;
+}
+
+
+h1 {
+  color:rgba(28, 45, 53, 1);
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.CSS {
+  background: rgba(65, 60, 54);
+  border-radius: 50px;
+}
+
+.sketch:hover{
+  background: rgba(191, 209, 214);
+}
+
+.model:hover {
+  background: rgba(189, 167, 153);
+}
+
+.photo:hover {
+  background-color: rgba(57, 79, 86, 1)
+}
+
+.photo-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
   
-  body {
-    font-family: 'Roboto', sans-serif;
-    margin: 40px;
-  
+  grid-auto-rows: 10vw;
+  grid-auto-flow: dense;
+  gap: 1rem;
+  margin: 40px;
+  margin-top: 200px;
   }
-  
-  .header-img {
-    background-image: url(./img/IMG_0853-one.png);
-    height:50vh;
-    width: 100%;
-    display: block;
-    position: relative;
+
+  .alpaka{
+    background-image:  url(./img/alpaka.jpg);
     background-size: cover;
-    background-position: top;
-    opacity: 0.5;
-
-    padding: 11em;
+    background-position: center;
+    grid-row: span 2;
   }
 
-  .header-text {
-    background-color: rgba(65, 60, 54, 0.9);
-    color: #FFFFFF;
-    margin: auto;
-    padding: 0.4em;
-    width: 310px;
+  .rotat {
+      background-image:url("paper.gif");
+      background-color:rgba(245, 241, 241, 1);
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      grid-row: span 2;
+  }
+
+  .animation {
+    width: 100px;
     height: 100px;
-    text-align: center;
-
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 59px;
-    
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(#87969B, #BDA799), (#BFD1D6, #413C36);
+    animation: animate 0.5s linear infinite;
   }
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animation span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(#BDA799, #87969B, #413C36);
+  }
+  
+  .loader:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #42f5cb;
+    border-radius: 50%;
+  }
+  
+  .button {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(245, 241, 241, 1);
+
+  }
+
+
+
+
+/* hover */
+
+a:link {
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  border-radius:50px;
+  
+  transition:.4s;
+  transition-property: left;
+}
