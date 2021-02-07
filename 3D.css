@@ -7,28 +7,36 @@
   body {
     font-family: 'Roboto', sans-serif;
     margin: 40px;
-  
-  }
-  
-  .header-img {
-    background-image: url(./img/IMG_0853-mountain2.png);
-    width: 100%;
-    display: block;
-    position: relative;
-    background-size: cover;
-    background-position: top;
+    }
 
-    opacity: 0.8;
-    padding: 11em;
-  }
-
+    .home {
+      background-color:rgb(192, 192, 192);
+      padding: 0.5em;
+      text-align: center;
+      color: #F5F1F1;
+      border-radius: 3px;
+      font-size: 15px;
+    }
+  
+    .header-img {
+      background-image: url(./img/IMG_0853-mountain2.png);
+      width: 100%;
+      display: block;
+      position: relative;
+      background-size: cover;
+      background-position: top;
+      padding: 5em;
+      height: 25vh;
+      margin-top: 5vh;
+    }
+  
     /* buttons Portfolio */
 
   .boxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 30px;
     }
   
@@ -55,22 +63,55 @@
     background: rgba(189, 167, 153);
     border-radius: 50px;
   }
-  
-  h1 {
-    color:rgba(28, 45, 53, 1);
-    font-size: 50px;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 40px;
-  }
+
 
   .CSS:hover {
     background: rgba(65, 60, 54);
   }
 
+.donut{
+  background-image:  url(./img/donut.png);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  margin: 40px;
+}
 
 
+.buttom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(76, 81, 92, 1);
+  height: 70px;
+}
 
+.buttom > * {
+  padding: 0px;
+  font-weight: 300;
+  font-size: 15px;
+  color: #F5F1F1;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.hb {
+text-align: left;
+padding-left: 15px;
+}
+
+.molln {
+grid-column: 2 / 4;
+text-align: center;
+}
+  
+.mtd {
+text-align: right;
+padding-right: 15px;
+}
 
   
 /* hover */
